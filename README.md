@@ -30,3 +30,28 @@ $ cd insurance-model
 
 # Install dependencies
 $ pip install -r requirements.txt
+
+## Model
+
+The model uses the Chain-Ladder method to predict future insurance claims. The Chain-Ladder method relies on the following equation:
+
+\[
+\text{Future Claims} = \text{Paid Claims} \times \left( \frac{\text{Total Claims}}{\text{Paid Claims}} \right)
+\]
+
+Where:
+- \( \text{Future Claims} \) are the claims amounts that are expected in the future.
+- \( \text{Paid Claims} \) are the claims amounts that have been paid till now.
+- \( \text{Total Claims} \) are the estimated total claims, both paid and unpaid.
+
+To calculate the claims development factors and ultimates, the method uses the following formula:
+
+\[
+\text{CDF}_i = \frac{\text{Claims}_{i+1}}{\text{Claims}_i}
+\]
+\[
+\text{Ultimate Claims}_i = \text{Claims}_i \times \text{CDF}_i
+\]
+
+Note: The above equations are in LaTeX format and may not render properly in GitHub's native Markdown viewer.
+
