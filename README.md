@@ -46,12 +46,9 @@ Where:
 
 To calculate the claims development factors and ultimates, the method uses the following formula:
 
-\[
-\text{CDF}_i = \frac{\text{Claims}_{i+1}}{\text{Claims}_i}
-\]
-\[
-\text{Ultimate Claims}_i = \text{Claims}_i \times \text{CDF}_i
-\]
+$$\text{CDF}_i = \frac{\text{Claims}_{i+1}}{\text{Claims}_i}$$
+
+$$\text{Ultimate Claims}_i = \text{Claims}_i \times \text{CDF}_i$$
 
 Note: The above equations are in LaTeX format and may not render properly in GitHub's native Markdown viewer.
 
